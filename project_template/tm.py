@@ -16,9 +16,7 @@ import scipy.sparse as sps
 import os 
 
 print os.getcwd() 
-
-with open('LDA_model.p','rb') as infile:
-    a=pickle.load(infile)
+a=pickle.load(open('LDA_model.p','rb'))
 
 def read(filename,f):
     with open(filename+'.'+f,'rb') as files:
