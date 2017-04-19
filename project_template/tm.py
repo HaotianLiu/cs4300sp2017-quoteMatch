@@ -21,7 +21,9 @@ a=json.load(open('contractions.json','rb'))
 def read(filename,f):
     with open(filename+'.'+f,'rb') as files:
         if f=='p':
-            return pickle.load(files)
+            global loaded
+            loaded=pickle.load(files)
+            return loaded
         elif f=='json':
             return json.load(files)
         else:
