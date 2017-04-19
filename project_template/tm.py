@@ -19,7 +19,7 @@ print os.getcwd()
 a=json.load(open('contractions.json','rb'))
 
 def read(filename,f):
-    with open(filename+'.'+f,'rb') as files:
+    with open(filename+'.'+f,'rb+') as files:
         if f=='p':
             global loaded
             loaded=pickle.load(files)
