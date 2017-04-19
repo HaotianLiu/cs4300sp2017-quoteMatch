@@ -18,6 +18,9 @@ import os
 print os.getcwd() 
 a=json.load(open('contractions.json','rb'))
 
+import sys
+print '\n'.join(sys.path)
+
 def read(filename,f):
     with open(filename+'.'+f,'rb+') as files:
         if f=='p':
