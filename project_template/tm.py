@@ -11,6 +11,7 @@ from stemming.porter2 import stem
 from sklearn.feature_extraction.text import TfidfVectorizer
 import re
 import pickle
+import copy_reg
 import scipy.sparse as sps
 
 
