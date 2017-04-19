@@ -32,8 +32,8 @@ def recover_Matrix(Sparse,m,n):
 
 print "Recovering files... "
 doc_by_vocab=read('doc_by_vocab','p') 
-doc_by_vocab=recover_Matrix(doc_by_vocab,0,doc_by_vocab.shape[0]) print'document-term matrix loaded...'
-model=read('LDA_model','p') print'LDA model loaded...'
+doc_by_vocab=recover_Matrix(doc_by_vocab,0,doc_by_vocab.shape[0]); print'document-term matrix loaded...'
+model=read('LDA_model','p'); print'LDA model loaded...'
 cv=read('LDA_trainingMatrix','p') 
 cv=recover_Matrix(cv,0,cv.shape[0]); print 'training data loaded...'
 res= read('LDA_fittedMatrix','p'); print 'Fitted Topic Matrix loaded...'
