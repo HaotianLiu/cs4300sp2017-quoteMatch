@@ -15,7 +15,7 @@ import copy_reg
 import scipy.sparse as sps
 import os 
 
-os.getcwd() 
+print os.getcwd() 
 
 with open('LDA_model.p','rb') as infile:
     a=pickle.load(infile)
