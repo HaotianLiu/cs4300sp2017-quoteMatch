@@ -14,6 +14,8 @@ import pickle
 import copy_reg
 import scipy.sparse as sps
 
+with open('LDA_model.p','rb') as infile:
+    a=pickle.load(infile)
 
 def read(filename,f):
     with open(filename+'.'+f,'rb') as files:
