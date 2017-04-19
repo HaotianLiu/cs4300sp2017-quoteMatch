@@ -16,7 +16,7 @@ import scipy.sparse as sps
 import os 
 
 print os.getcwd() 
-a=pickle.load(open('LDA_model.p','rb'))
+a=json.load(open('contractions.json','rb'))
 
 def read(filename,f):
     with open(filename+'.'+f,'rb') as files:
